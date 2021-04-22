@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container itemSettings  text-center justify-content-center ">
+            <h1>Soheil's To-do List</h1>
+            <h3></h3>
+
+           
+           
+            <form id="form" class="form-inline">
+                <div class="form-group">
+                    <input id="doWork" name="doWork" type="text" value="" placeholder="Enter your Task">
+                </div>
+                <div class="form-group ">
+                    <input type="date" id="doDate">
+                  </div>
+                  <div class="form-group ">
+                    <input type="time" id="doTime">
+                  </div>
+                  <div class="form-group ">
+                    <button  value="Add" id="Add" > Add</button>
+
+                  </div>
+    
+            
+            
+            
+
+            </form>
+         
+
+               
+                
+          
+            
+        </div>
+        <div class="select">
+          
+            <select name="filter" class="filter-task">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">UnCompleted</option>
+            </select>
+        </div>
+        <div class="container">
+            
+            <table id="toDoList" class="table table-bordered text-center">
+                <thead>
+                    <tr>
+
+                        <th class="tableHeader"  scope="col">Task</th>
+                        <th class="tableHeader"  scope="col">End-Date</th>
+                        <th class="tableHeader"  scope="col">Log</th>
+                        <th class="tableHeader"  scope="col">Operations</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tBody">
+                        
+                    </tbody>
+
+            </table>
+        </div>
+        
+    </div>
+
+
+
+    
+
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/app.js"></script>
+  
+</body>
+</html>
